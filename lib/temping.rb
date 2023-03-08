@@ -21,7 +21,8 @@ class Temping
           end
         end
         @model_klasses.clear
-        ActiveSupport::Dependencies::Reference.clear!
+        # Removed in Rails 7 - Let's try without
+        # ActiveSupport::Dependencies::Reference.clear!
       end
     end
 
